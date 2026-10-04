@@ -37,7 +37,7 @@ data as well.
 
     -   Name : Enter ***MyEC2Server1***
 
-**Image 1**
+![Image 1](screenshots/Picture1.png)
 
 1.  Under the **Application and OS Images (Amazon Machine Image)**
     section :
@@ -47,13 +47,13 @@ data as well.
 -   Amazon Machine Image (AMI) : select **Amazon Linux 2023 kernel 6.1
     AMI**
 
-**Image 2**
+![Image 2](screenshots/Picture2.png)
 
 1.  Under the **Instance Type** section **:**
 
     -   Instance Type : Select **t2.micro**
 
-**Image 3**
+![Image 3](screenshots/Picture3.png)
 
 1.  Under the **Key Pair (login)** section **:**
 
@@ -65,7 +65,7 @@ data as well.
 -   Click on **Create key pair** and then select the created key pair
     from the drop-down.
 
-**Image 4**
+![Image 4](screenshots/Picture4.png)
 
 1.  Under the **Network Settings** section **:**
 
@@ -97,9 +97,9 @@ data as well.
 
 -   Source: **Anywhere** (From ALL IP addresses accessible).
 
-**Image 5**
+![Image 5](screenshots/Picture5.png)
 
-**Image 6**
+![Image 6](screenshots/Picture6.gif)
 
 1.  Under the **Advanced details** section **:**
 
@@ -126,7 +126,7 @@ echo "<html><h1> Welcome to Whizlabs Server 1 </h1></html>" > /var/www/html/inde
     **Instances** page from the left menu and wait until the status of
     the EC2 Instance changes to **running**.
 
-**Image 7**
+![Image 7](screenshots/Picture7.png)
 
 ## Step 3: Launch Second EC2 Instances
 
@@ -141,7 +141,7 @@ the user data as well.
 
 -   Name : Enter ***MyEC2Server2***
 
-**Image 8**
+![Image 8](screenshots/Picture8.png)
 
 1.  Under the **Application and OS Images (Amazon Machine Image)**
     section :
@@ -151,7 +151,7 @@ the user data as well.
 -   Amazon Machine Image (AMI) : select **Amazon Linux 2023 kernel 6.1
     AMI**
 
-**Image 9**
+![Image 9](screenshots/Picture9.png)
 
 \*\* \*\*
 
@@ -159,7 +159,7 @@ the user data as well.
 
     -   Instance Type : Select **t2.micro**
 
-**Image 10**
+![Image 10](screenshots/Picture10.png)
 
 1.  Under the **Key Pair (login)** section **:**
 
@@ -175,7 +175,7 @@ the user data as well.
 
 -   Security group name : Enter\*\* MyWebserverSG\*\*
 
-**Image 11**
+![Image 11](screenshots/Picture11.png)
 
 1.  Under the **Advanced details** section **:**
 
@@ -202,7 +202,7 @@ echo "<html><h1> Welcome to Whizlabs Server 2 </h1></html>" > /var/www/html/inde
     and wait until the status changes to the **Running**. It will
     usually take 1-2 minutes.
 
-**Image 12**
+![Image 12](screenshots/Picture12.png)
 
 ## Step 4: Create a Target Group
 
@@ -216,7 +216,7 @@ distribute the traffic among these instances.
 
 2.  Click on **Create target group** button on the top right corner.
 
-**Image 13**
+![Image 13](screenshots/Picture13.png)
 
      3. Basic configuration:
 
@@ -242,7 +242,7 @@ distribute the traffic among these instances.
 
 -   Choose Interval : 6 seconds
 
-**Image 14**
+![Image 14](screenshots/Picture14.png)
 
     6. Leave everything as default and click on **Next** button.
 
@@ -253,17 +253,17 @@ distribute the traffic among these instances.
 
 -   Click on \*\*Include as pending below \*\*and scroll down.
 
-**Image 15**
+![Image 15](screenshots/Picture15.png)
 
        8. Review targets:
 
 -   Review the targets and click on \*\*Create target group \*\*button.
 
-**Image 16**
+![Image 16](screenshots/Picture16.png)
 
       9. Your Target group has been successfully created.
 
-**Image 17**
+![Image 17](screenshots/Picture17.png)
 
 ## Task 5: Create an Application Load Balancer
 
@@ -288,7 +288,7 @@ providing the required configurations like name, target group etc.
 
     -   IP address type: Choose **IPv4**
 
-**Image 18**
+![Image 18](screenshots/Picture18.png)
 
      5. Network mapping:
 
@@ -301,7 +301,7 @@ providing the required configurations like name, target group etc.
 -   Security groups : Select\*\* \*\*an \*\*existing security group
     \*\*i.e **MyWebserverSG** from the drop down menu.
 
-**Image 19**
+![Image 19](screenshots/Picture19.gif)
 
     7. Listeners and routing:
 
@@ -312,7 +312,7 @@ providing the required configurations like name, target group etc.
 -   Default action : Select \**MyWAFTargetGroup* \*\*\*from the drop
     down menu
 
-**Image 20**
+![Image 20](screenshots/Picture20.png)
 
      8. Leave everything as default and click on **Create load balancer **button.
 
@@ -332,14 +332,14 @@ traffic or not.
 3.  Now select the **Targets** tab and **wait till both the targets
     become healthy (Important)**.
 
-**Image 21**
+![Image 21](screenshots/Picture21.png)
 
 1.  Now again navigate to **Load Balancers** from the left side menu
     under **Load balancing**.
 2.  Select the **MyWAFLoadBalancer** Load Balancer and copy the **DNS
     name** under **Description** tab.
 
-**Image 22**
+![Image 22](screenshots/Picture22.png)
 
 1.  Copy the **DNS name** of the ELB and enter the address in the
     **browser**.
@@ -350,9 +350,9 @@ traffic or not.
 2.  You should see the **index.html** page content of Web Server 1 or
     Web Server 2
 
-**Image 23**
+![Image 23](screenshots/Picture23.png)
 
-**Image 24**
+![Image 24](screenshots/Picture24.png)
 
      8. Now **Refresh** the page a **few times**. You will observe that the index pages change each time you refresh.
 
@@ -372,7 +372,7 @@ in a Round Robin manner**.
 
 -   You will be able to see the below output.
 
-**Image 25**
+![Image 25](screenshots/Picture25.png)
 
 -   Here the **SQL Injection went inside the server** and since we only
     have an index page, the server doesn\'t know how to solve the URL
@@ -390,7 +390,7 @@ in a Round Robin manner**.
 
 -   You will be able to see the below output.
 
-**Image 26**
+![Image 26](screenshots/Picture26.png)
 
 -   Here also the **Query string went inside the server** and the server
     always passes the query string inside and it is resolved by the code
@@ -409,11 +409,11 @@ add some customized rules for location restriction, query strings and
 
 Click on **Switch to the Old WAF Console** option at the Bottom.
 
-**Image 27**
+![Image 27](screenshots/Picture27.png)
 
 2.  Click on **Create web ACL** button.
 
-**Image 28**
+![Image 28](screenshots/Picture28.png)
 
     3. Describe web ACL and associate it to AWS resources :
 
@@ -437,7 +437,7 @@ Click on **Switch to the Old WAF Console** option at the Bottom.
 
 -   Select **MyWAFLoadBalancer** Load Balancer from the list.
 
-**Image 29**
+![Image 29](screenshots/Picture29.png)
 
 -   Now click on the **Add** button.
 -   Click on the **Next** button.
@@ -461,7 +461,7 @@ Click on **Switch to the Old WAF Console** option at the Bottom.
 -   IP address to use to determine the country of origin : Select
     **Source IP address**
 
-**Image 30**
+![Image 30](screenshots/Picture30.png)
 
 -   Under **Then** : **Action** Select **Block**.
 
@@ -507,13 +507,13 @@ Click on **Switch to the Old WAF Console** option at the Bottom.
 -   Scroll down to **SQL database** and enable the corresponding **Add
     to web ACL** button.
 
-**Image 31**
+![Image 31](screenshots/Picture31.png)
 
 -   Scroll down to the end and click on \*\*Add rules \*\*button.
 
 -   Now you have 3 rules added.
 
-**Image 32**
+![Image 32](screenshots/Picture32.png)
 
 -   Under **Default web ACL action for requests that don\'t match any
     rules**, **Default action** Select **Allow**.
@@ -559,7 +559,7 @@ Click on **Switch to the Old WAF Console** option at the Bottom.
 4.  You should see the **index.html** page content of Web Server 1 or
     Web Server 2.
 
-**Image 33**
+![Image 33](screenshots/Picture33.png)
 
 1.  Now **Refresh** the page **a few times**.You will observe that the
     index pages change each time you refresh.
@@ -580,7 +580,7 @@ in a Round Robin manner**.
 
     -   You will be able to see the below output.
 
-**Image 34**
+![Image 34](screenshots/Picture34.png)
 
 -   Here the **SQL Injection is blocked by WAF before it goes inside the
     server**.
@@ -597,7 +597,7 @@ in a Round Robin manner**.
 
     -   You will be able to see the below output.
 
-**Image 35**
+![Image 35](screenshots/Picture35.png)
 
 -   Here also the **Query string which contains admin is blocked by WAF
     before it could go inside the server**.
@@ -640,12 +640,12 @@ mitigating the impact of such attacks.
 
     -   Select the **Delete** option.
 
-**Image 36**
+![Image 36](screenshots/Picture36.png)
 
 -   Confirm by typing **confirm** and then click on \*\*Delete
     \*\*button when a pop-up is shown.
 
-**Image 37**
+![Image 37](screenshots/Picture37.png)
 
 -   **MyWAFLoadBalancer** be deleted immediately.
 
@@ -663,7 +663,7 @@ mitigating the impact of such attacks.
 
     -   Select the **Delete** option.
 
-**Image 38**
+![Image 38](screenshots/Picture38.png)
 
 -   Now click on the **Yes, delete** button to confirm deletion.
 
