@@ -610,7 +610,7 @@ mitigating the impact of such attacks.
 
 ## Step 9: Delete AWS Resources
 
-### 10.1 Deleting an EC2 Instance {#101-deleting-an-ec2-instance} {#101-deleting-an-ec2-instance-101-deleting-an-ec2-instance}
+### 9.1 Deleting an EC2 Instance {#101-deleting-an-ec2-instance} {#101-deleting-an-ec2-instance-101-deleting-an-ec2-instance}
 
 -   Make sure you are in the \*\*US East (N. Virginia) us east-1
     \*\*Region.
@@ -624,7 +624,7 @@ mitigating the impact of such attacks.
 -   Click on **Yes,Terminate** button and your EC2 will start
     terminating.
 
-### 10.2 Deleting Elastic LoadBalancer and Target Group {#102-deleting-elastic-loadbalancer-and-target-group} {#102-deleting-elastic-loadbalancer-and-target-group-102-deleting-elastic-loadbalancer-and-target-group}
+### 9.2 Deleting Elastic LoadBalancer and Target Group {#102-deleting-elastic-loadbalancer-and-target-group} {#102-deleting-elastic-loadbalancer-and-target-group-102-deleting-elastic-loadbalancer-and-target-group}
 
 -   In the EC2 console, navigate to **Load Balancer** in the left-side
     paneol.
@@ -640,12 +640,12 @@ mitigating the impact of such attacks.
 
     -   Select the **Delete** option.
 
-**Image 37**
+**Image 36**
 
 -   Confirm by typing **confirm** and then click on \*\*Delete
     \*\*button when a pop-up is shown.
 
-**Image 38**
+**Image 37**
 
 -   **MyWAFLoadBalancer** be deleted immediately.
 
@@ -663,13 +663,13 @@ mitigating the impact of such attacks.
 
     -   Select the **Delete** option.
 
-**Image 39**
+**Image 38**
 
 -   Now click on the **Yes, delete** button to confirm deletion.
 
 -   **MyWAFTargetGroup** will be deleted immediately.
 
-### 10.3 Deleting Web ACL {#103-deleting-web-acl} {#103-deleting-web-acl-103-deleting-web-acl}
+### 9.3 Deleting Web ACL {#103-deleting-web-acl} {#103-deleting-web-acl-103-deleting-web-acl}
 
 -   Navigate to \*\*WAF \*\*by clicking on the **Services** menu in the
     top, then click on **WAF & Shield** in the **Security, Identity &
