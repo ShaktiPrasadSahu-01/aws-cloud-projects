@@ -119,8 +119,4 @@ Projects and architecture exercises focused on understanding how to build AWS in
 - Managed Services
 - Resource Optimization
 
-                  │            │  Database   │
-                  │            └─────────────┘
-
-
 
