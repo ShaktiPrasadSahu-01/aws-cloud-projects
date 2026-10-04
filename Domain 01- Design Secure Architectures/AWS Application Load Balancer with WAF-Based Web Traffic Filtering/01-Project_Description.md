@@ -102,9 +102,7 @@ Each load balancer is configured differently:
 
 ## Architecture Diagram
 
-$$
-Image 1
-$$
+![Image 1](screenshots/Architecture.png)
 
 ## Implementation Details
 
