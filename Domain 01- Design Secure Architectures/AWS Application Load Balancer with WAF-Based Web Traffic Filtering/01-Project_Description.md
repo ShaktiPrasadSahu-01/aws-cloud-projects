@@ -106,7 +106,7 @@ $$
 Image 1
 $$
 
-## Task Details
+## Implementation Details
 
  1. Sign in to AWS Management Console.
 
