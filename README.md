@@ -1,6 +1,6 @@
-# ☁️ AWS Cloud Architecture & Infrastructure Portfolio
+# ☁️ AWS Cloud Project Portfolio
 
-Welcome to my **AWS Cloud Project** repo.
+Welcome to my **AWS Cloud Project** repository.
 
 This repository is a collection of the **AWS projects and practical labs** I have completed while building my foundation in AWS Cloud (Networking, Infrastructure, Security, and Solutions Architecture).
 
